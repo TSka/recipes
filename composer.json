@@ -1,0 +1,37 @@
+{
+    "name": "TSka/recipes",
+    "description": "The recipes catalog",
+    "type": "project",
+    "require": {
+        "php": ">=7.2",
+        "aura/router": "^3.1",
+        "psr/container": "^1.0",
+        "psr/http-message": "^1.0",
+        "roave/security-advisories": "dev-master",
+        "zendframework/zend-config-aggregator": "^1.0",
+        "zendframework/zend-diactoros": "^1.7",
+        "zendframework/zend-expressive-helpers": "^5.0",
+        "zendframework/zend-inputfilter": "^2.8",
+        "zendframework/zend-servicemanager": "^3.3",
+        "zendframework/zend-stratigility": "^3.0",
+        "zendframework/zend-validator": "^2.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/App/",
+            "Framework\\": "src/Framework/",
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.1"
+    },
+    "scripts": {
+        "test": "phpunit --colors=always"
+    }
+}
